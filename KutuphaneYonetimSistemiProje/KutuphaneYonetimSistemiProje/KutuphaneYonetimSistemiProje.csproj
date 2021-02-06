@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{198AC013-05DE-4D65-AED4-009CA07E82F9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KutuphaneYonetimSistemiProje</RootNamespace>
+    <AssemblyName>KutuphaneYonetimSistemiProje</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Emanet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Emanet.Designer.cs">
+      <DependentUpon>frm_Emanet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_emanetEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_emanetEkle.Designer.cs">
+      <DependentUpon>frm_emanetEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_EmanetSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_EmanetSil.Designer.cs">
+      <DependentUpon>frm_EmanetSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_giris.Designer.cs">
+      <DependentUpon>frm_giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_KitapDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_KitapDuzenle.Designer.cs">
+      <DependentUpon>frm_KitapDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_KitapEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_KitapEkle.Designer.cs">
+      <DependentUpon>frm_KitapEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Kitaplar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Kitaplar.Designer.cs">
+      <DependentUpon>frm_Kitaplar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_kitapsil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_kitapsil.Designer.cs">
+      <DependentUpon>frm_kitapsil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_TeslimEtmeyenler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_TeslimEtmeyenler.Designer.cs">
+      <DependentUpon>frm_TeslimEtmeyenler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_yayineviEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_yayineviEkle.Designer.cs">
+      <DependentUpon>frm_yayineviEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_yayineviSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_yayineviSil.Designer.cs">
+      <DependentUpon>frm_yayineviSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_yayinevleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_yayinevleri.Designer.cs">
+      <DependentUpon>frm_yayinevleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_YazarDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_YazarDuzenle.Designer.cs">
+      <DependentUpon>frm_YazarDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_YazarEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_YazarEkle.Designer.cs">
+      <DependentUpon>frm_YazarEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Yazarlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Yazarlar.Designer.cs">
+      <DependentUpon>frm_Yazarlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_YazarSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_YazarSil.Designer.cs">
+      <DependentUpon>frm_YazarSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KutuphaneYonetimSistemiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KutuphaneYonetimSistemiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KutuphaneYonetimSistemiDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KutuphaneYonetimSistemiDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KutuphaneYonetimSistemiDataSet2My.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KutuphaneYonetimSistemiDataSet2My.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Emanet.resx">
+      <DependentUpon>frm_Emanet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_emanetEkle.resx">
+      <DependentUpon>frm_emanetEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_EmanetSil.resx">
+      <DependentUpon>frm_EmanetSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_giris.resx">
+      <DependentUpon>frm_giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_KitapDuzenle.resx">
+      <DependentUpon>frm_KitapDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_KitapEkle.resx">
+      <DependentUpon>frm_KitapEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Kitaplar.resx">
+      <DependentUpon>frm_Kitaplar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_kitapsil.resx">
+      <DependentUpon>frm_kitapsil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_TeslimEtmeyenler.resx">
+      <DependentUpon>frm_TeslimEtmeyenler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_yayineviEkle.resx">
+      <DependentUpon>frm_yayineviEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_yayineviSil.resx">
+      <DependentUpon>frm_yayineviSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_yayinevleri.resx">
+      <DependentUpon>frm_yayinevleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_YazarDuzenle.resx">
+      <DependentUpon>frm_YazarDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_YazarEkle.resx">
+      <DependentUpon>frm_YazarEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Yazarlar.resx">
+      <DependentUpon>frm_Yazarlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_YazarSil.resx">
+      <DependentUpon>frm_YazarSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="KutuphaneYonetimSistemiDataSet.xsc">
+      <DependentUpon>KutuphaneYonetimSistemiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneYonetimSistemiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KutuphaneYonetimSistemiDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KutuphaneYonetimSistemiDataSet.xss">
+      <DependentUpon>KutuphaneYonetimSistemiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneYonetimSistemiDataSet1.xsc">
+      <DependentUpon>KutuphaneYonetimSistemiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneYonetimSistemiDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KutuphaneYonetimSistemiDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KutuphaneYonetimSistemiDataSet1.xss">
+      <DependentUpon>KutuphaneYonetimSistemiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneYonetimSistemiDataSet2My.xsc">
+      <DependentUpon>KutuphaneYonetimSistemiDataSet2My.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneYonetimSistemiDataSet2My.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KutuphaneYonetimSistemiDataSet2My.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KutuphaneYonetimSistemiDataSet2My.xss">
+      <DependentUpon>KutuphaneYonetimSistemiDataSet2My.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
